@@ -18,21 +18,13 @@ make install
 ```
 
 ### Running
-* Step1: prepare a directory containing your input files (with exact names):
-
-  * ```identification.tsv```: tab-delimeted file:  **column1**: peptide, **column2**: protein name, **column3**: identification probability
-  * ```db.fasta```: reference protein database in fasta format.
-
-* Step2: ```python run.py directoryName```
-
-Upon completion, ```pred.csv``` will contain the predicted protein identification probabilities.
+```
+./main
+```
 
 ### Benchmark Datasets
-There are [7 example datasets](https://github.com/DeepPep/public/tree/master/data) (used for benchmarking in the paper). Each dataset is generated from MS/MS raw files using TPP pipeline. For example, to run the [18Mix benchmark dataset](https://github.com/DeepPep/public/tree/master/data/18mix), simply run the following:
+There are 7 examples in the main.cpp
 
-```
-python run.py data/18Mix
-```
 ### Support
 
 If you have any questions about PAMDB, please contact Linh Huynh (huynh@ucdavis.edu) or Ilias Tagkopoulos (itagkopoulos@ucdavis.edu).
