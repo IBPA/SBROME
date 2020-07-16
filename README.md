@@ -23,7 +23,7 @@ make install
 ```
 
 ### Benchmark Datasets
-There are 7 examples in the main.cpp
+There are 7 examples in the main.cpp. Edit the file main.cpp for each example, then re-compile and run again. 
 
 ### Support
 
