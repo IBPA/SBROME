@@ -3,21 +3,18 @@ SBROME
 
 Synthetic Biology Reusable Optimization Methodology
 
-# PAMDB
-A Parts Database with Consensus Parameter Estimation for Synthetic Circuit Design
-
-### What is PAMDB?
-PAMDB aims to bridge the gap between published circuits and lack of universal quantitive parameters for their parts. PAMDB includes parameter values inferred from hundreds of papers under a single unified model. PAMDB can be used to rank parts based on their activity, acquire parameter values and quantify their uncertainty, simulate circuits and visualize the part universe for the published synthetic biology work so far
+### What is SBROME?
+SBROME (Synthetic Biology Reusable Optimization Methodology) is a tool to design synthetic gene circuits. An abstract user-defined circuit is first transformed and matched against a module database that incorporates circuits that have previously been experimentally characterized. Then the resulting circuit is decomposed to subcircuits that are populated with the set of parts that best approximate the desired function.
 
 ### Dependencies
 * Gcc
-* Matlab
 
 
 ### Installation
+
 ```
-git clone https://github.com/ameenetemady/MyCommon.git
-git clone https://github.com/DeepPep/DeepPep.git
+make
+make install
 ```
 
 ### Running
@@ -41,11 +38,12 @@ python run.py data/18Mix
 If you have any questions about PAMDB, please contact Linh Huynh (huynh@ucdavis.edu) or Ilias Tagkopoulos (itagkopoulos@ucdavis.edu).
 
 ### Citation
- L. Huynh, and I. Tagkopoulos, “A Parts Database with Consensus Parameter Estimation for Synthetic Circuit Design”, ACS Synthetic Biology (2016) [\[link\]](https://pubs.acs.org/doi/abs/10.1021/acssynbio.5b00205)
+
+Huynh, L., Tsoukalas, A., Köppe, M., & Tagkopoulos, I. (2013). SBROME: a scalable optimization and module matching framework for automated biosystems design. ACS synthetic biology, 2(5), 263-273.[\[link\]](https://pubs.acs.org/doi/abs/10.1021/sb300095m)
 
 ### Licence
 See the [LICENSE](./LICENSE) file for license rights and limitations (Apache2.0).
 
 ### Acknowledgement
-This work was supported by the NSF CAREER grant #1254205 to IT.
+This work was supported by the NSF grant (#0941360 and #1146926).
 
